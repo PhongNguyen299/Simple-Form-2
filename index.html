@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Form</title>
+  <style>
+    *{box-sizing: border-box;
+    }
+    span {
+      color: blue;
+    }
+    div {
+      border: 2px solid black;
+    }
+    .wufoo {
+      font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+    }
+    .form-2 input {
+        margin-bottom: 20px;
+    }
+    .form-2 label {
+        margin-right: 50px;
+        margin-left: 5px;
+    }
+    table{
+        justify-content: center;
+        align-items: center;
+    }
+    .form-2{
+        background-color: yellow;
+    }
+    h3 {margin-top:0;background-color: aquamarine;color:blue}
+  </style>
+</head>
+<body>
+<div class="wufoo">
+  <form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
+      <p style="background-color: red;margin-top:2px;text-align: center;color: white;font-size: 20px">SỞ THÍCH CỦA BẠN</p>
+      <span style="margin-right: 10px;margin-left: 30px;" >Họ và tên</span>
+      <input  type="text" name="yourname"><br>
+      <span style="margin-right: 42px;margin-left: 30px;">Email</span>
+      <input  type="text" name="email" size="15px"><br>
+      <span style="display: inline-block;margin-left: 30px">Sở thích</span>
+    <table style="display: inline;  margin-left: 15px; color: darkorange" >
+      <tr>
+        <td><input type="checkbox" name="hoppy">Thể thao</td>
+        <td><input type="checkbox" name="hoppy">Âm nhạc</td>
+        <td><input type="checkbox" name="hoppy">Đọc sách</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="hoppy">Lướt web</td>
+        <td><input type="checkbox" name="hoppy">Chơi game</td>
+        <td><input type="checkbox" name="hoppy">Điện ảnh</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="hoppy">Du lịch</td>
+      </tr>
+    </table><br>
+    <input style="margin-left: 120px" type="submit" value="Gửi thông tin">
+    <input type="reset" value="Nhập lại">
+  </form>
+</div>
+<div>
+    <form class="form-2">
+        <h3>ĐĂNG KÝ HỌC VIỆN</h3>
+        <label>Họ và tên</label>
+        <input hspace="5px"type="text" name="name" size="30"><br>
+        <label>Ngày sinh</label>
+        <input type="text" name="date"><br>
+        <label>Giới tính</label>
+        <input type="radio" value="male">Nam
+        <input type="radio" value="male">Nữ <br>
+        <label>Địa chỉ</label>
+        <input hspace="20px"  type="text" name="Address" size="30" ><br>
+        <label>Lớp</label>
+        <select style="margin-left:40px;margin-bottom: 20px">
+            <option value=" ">--Chọn lớp--</option>
+            <option value="Lớp A">Lớp A</option>
+            <option value="Lớp B ">Lớp B</option>
+        </select><br>
+        <label>Email</label>
+        <input hspace="30px" type="text" name="email"><br>
+        <label >Điện thoại</label>
+        <input type="text" name="phone"><br>
+        <input style="margin-left: 130px" type="submit" value="Đăng ký">
+        <input type="reset" value="Nhập lại">
+    </form>
+</div>
+</body>
+</html>
